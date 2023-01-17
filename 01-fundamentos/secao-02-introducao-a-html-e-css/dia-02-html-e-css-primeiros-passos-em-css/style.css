@@ -6,7 +6,8 @@ body{
     background-color: rgb(255, 400, 200);
 }
 #css{
-    font-size: 40px; ##da pra usar em tb, que ignifica a proporção em relação ao body
+    font-size: 40px; 
+/*da pra usar em tb, que ignifica a proporção em relação ao body*/
     background-color: red;
 
 }
