@@ -1,28 +1,27 @@
-h2{
-    color: green;
+h2 {
+  color: green;
 }
 
-body{
-    background-color: rgb(255, 400, 200);
+body {
+  background-color: rgb(255, 400, 200);
 }
-#css{
-    font-size: 40px; 
-/*da pra usar em tb, que ignifica a proporção em relação ao body*/
-    background-color: red;
-
+#css {
+  font-size: 40px;
+  /*da pra usar em tb, que ignifica a proporção em relação ao body*/
+  background-color: red;
 }
-#h2-test{
-    color:coral
+#h2-test {
+  color: coral;
 }
-.list-style{
-    background-color: bisque;
-    color: darkblue;
-    font-weight: bold;
-    font-style: italic;
-    line-height: 40px;
-    text-decoration: underline;
-    text-align: center;
+.list-style {
+  background-color: bisque;
+  color: darkblue;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 40px;
+  text-decoration: underline;
+  text-align: center;
 }
-p{
-    font-family: Arial, Helvetica, sans-serif;
+p {
+  font-family: Arial, Helvetica, sans-serif;
 }
