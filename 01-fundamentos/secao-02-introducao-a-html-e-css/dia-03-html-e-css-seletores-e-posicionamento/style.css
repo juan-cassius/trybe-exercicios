@@ -1,0 +1,143 @@
+/* * {
+  margin: 0;
+  padding: 0;
+}
+.img {
+  width: 200px;
+  float: left;
+  margin: 20px;
+}
+.cavalo-marinho {
+  color: blue;
+}
+.paragrafos {
+  background-color: rgb(240, 240, 240);
+  width: 80%;
+  top: 400px;
+  overflow: auto;
+}
+.caixa {
+  color: white;
+  display: inline-block;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.width-and-height {
+  height: 50px;
+  width: 50px;
+}
+
+/* insira na classe abaixo um padding de 20px para aplicá-lo aos itens B, C e D */
+/* .padding {
+  padding: 20px;
+}
+
+/* insira na classe abaixo uma margem de 30px para aplicá-la aos itens C e D */
+.margin {
+  margin: 30px;
+}
+
+/* insira na classe abaixo uma borda com valor '5px solid black' para aplicá-la ao item D */
+.border {
+  border: 10px solid black;
+}
+#capi {
+  width: 80px;
+  position: absolute;
+  top: 20px;
+  z-index: 1;
+}
+#cachorro {
+  width: 60px;
+  position: absolute;
+  z-index: 2;
+}
+#oculos {
+  width: 20px;
+  position: absolute;
+  z-index: 3;
+}
+/* h2{
+    position: absolute;
+    z-index: 4;
+    top: 500px;
+} */
+.super-mario {
+  width: 200px;
+  position: absolute;
+  top: 50px;
+}
+
+.goomba {
+  width: 100px;
+  position: absolute;
+  top: 345px;
+  left: 50px;
+}
+
+.baloon {
+  position: absolute;
+  left: 200px;
+}
+
+.speach {
+  font-size: 25px;
+  position: absolute;
+  left: 220px;
+  top: 100px;
+  z-index: 1;
+}
+
+.bowser {
+  width: 200px;
+  position: absolute;
+  left: 500px;
+  top: 200px;
+}
+
+p,
+h1 {
+  text-align: center;
+}
+li:hover {
+  background-color: olive;
+  color: bisque;
+}
+li:active {
+  color: yellowgreen;
+  background-color: brown;
+  font: 300;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+.impar {
+  color: brown;
+}
+div:hover {
+  border: 2px solid red;
+}
+.primeira {
+  color: blueviolet;
+  font-size: x-small;
+}
+.segunda {
+  color: blue;
+}
+.terceira {
+  color: yellow;
+  padding: 3px;
+}
+.quarta {
+    color:black;
+}
+.quinta {
+    color: antiquewhite;
+}
+.primeira, .terceira, .quinta{
+    font-style: italic;
+}
