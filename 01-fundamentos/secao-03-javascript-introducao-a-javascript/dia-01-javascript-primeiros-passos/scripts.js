@@ -1,8 +1,8 @@
 // Esse é o exercício de variáveis
 
-const birthCity = "Castro";
-const myName = "Juan Cassius";
-let birthYear = 1997;
+// const birthCity = "Castro";
+// const myName = "Juan Cassius";
+// let birthYear = 1997;
 
 // console.log("Nasci em "+birthCity+" e meu nome é "+myName+". Nasci no ano de "+birthYear+".");
 
@@ -12,15 +12,15 @@ let birthYear = 1997;
 
 // Esse é o exercício de Tipos
 
-let movie = "Avengers"; //string literal
-let score = 10.89; //number literal
-let isValid = true; //boolean
-let variavel; //undefined
-let color = null; //redefinição
+// let movie = "Avengers"; //string literal
+// let score = 10.89; //number literal
+// let isValid = true; //boolean
+// let variavel; //undefined
+// let color = null; //redefinição
 
 //+, -, *, /, **
 
-let salary = 3500;
+// let salary = 3500;
 
 // console.log(salary + salary);
 // console.log(3 ** 3);
@@ -31,10 +31,10 @@ let salary = 3500;
 // exemplo: ++salary e salary++
 // += ou -= fazem com que a variável receba o valor dela mesma mais/menos 1.
 
-const base = 5;
-const heigth = 8;
-const area = base * heigth;
-const perimeter = 2 * 5 + 2 * 8;
+// const base = 5;
+// const heigth = 8;
+// const area = base * heigth;
+// const perimeter = 2 * 5 + 2 * 8;
 
 // console.log(perimeter);
 // console.log(area);
@@ -234,12 +234,11 @@ const perimeter = 2 * 5 + 2 * 8;
 
 // Exercícios par e ímpar:
 
+// const num1 = 2;
+// const num2 = 3;
+// const num3 = 2;
 
-const num1 = 2;
-const num2 = 3;
-const num3 = 2;
-
-// par 
+// par
 
 // if (num1 % 2 === 0 || num2 % 2 === 0 || num3 % 2 === 0) {
 //     console.log(true);
@@ -247,10 +246,52 @@ const num3 = 2;
 //     console.log(false);
 // }
 
-// ímpar 
+// ímpar
 
-if (num1 % 2 !== 0 || num2 % 2 !== 0 || num3 % 2 !== 0) {
-    console.log(true);
-}else{
-    console.log(false);
+// if (num1 % 2 !== 0 || num2 % 2 !== 0 || num3 % 2 !== 0) {
+//     console.log(true);
+// }else{
+//     console.log(false);
+// }
+
+// Exercício lucro de vendas
+// const custoProd = 2;
+// const valorVenda = 4;
+
+// let lucro = valorVenda - custoProd * 1.2;
+// if(custoProd < 0 || valorVenda < 0){
+//     console.log("Um dos valores inseridos é menor que zero");
+// }
+// console.log("O lucro é de "+lucro+" reais");
+
+let salarioBruto = 1302;
+let salarioDeduzido = 0;
+let salarioLiquido = 0;
+
+//Dedução do INSS
+console.log(salarioBruto);
+
+if (salarioBruto < 1556.95) {
+  salarioDeduzido = salarioBruto - salarioBruto * 0.08;
+} else if (salarioBruto >= 1556.95 && salarioBruto < 2594.93) {
+  salarioDeduzido = salarioBruto - salarioBruto * 0.09;
+} else if (salarioBruto >= 2594.93 && salarioBruto < 5189.83) {
+  salarioDeduzido = salarioBruto - salarioBruto * 0.11;
+} else if (salarioBruto > 5189.82) {
+  salarioDeduzido = salarioBruto - 570.88;
+} else {
+  console.log("Valor inserido inválido");
 }
+
+if (salarioDeduzido < 1903.99) {
+  salarioLiquido = salarioDeduzido;
+} else if (salarioDeduzido >= 1903.99 && salarioDeduzido < 2826.66) {
+  salarioLiquido = salarioDeduzido - (salarioDeduzido * 0.075 - 142.80);
+} else if (salarioDeduzido >= 2826.66 && salarioDeduzido < 3751.06) {
+  salarioLiquido = salarioDeduzido - (salarioDeduzido * 0.15 - 354.8);
+} else if (salarioDeduzido >= 3751.06 && salarioDeduzido < 4664.68) {
+  salarioLiquido = salarioDeduzido - (salarioDeduzido * 0.225 - 636.13);
+} else if (salarioDeduzido >= 4664.68) {
+  salarioLiquido = salarioDeduzido - (salarioDeduzido * 0.275 - 869.36);
+}
+console.log("Seu salário líquido será: R$"+salarioLiquido);
