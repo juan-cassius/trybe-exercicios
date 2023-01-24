@@ -42,12 +42,94 @@
 // }
 // console.log(counter);
 
-function dice(){
-    return Math.ceil(Math.random()*6);
+// function dice(){
+//     return Math.ceil(Math.random()*6);
+// }
+// let d1 = dice();
+// let d2 = dice();
+// while(d1 === d2){
+//     d2 = dice();
+// }
+// console.log(d1,d2);
+
+//Aula síncrona - MegaSena
+
+// let primeiraJogada = [12, 34, 6, 14, 28, 50];
+// let primeiroNumero = Math.floor(Math.random() * 60 + 1);
+// let segundoNumero = Math.floor(Math.random() * 60 + 1);
+// let terceiroNumero = Math.floor(Math.random() * 60 + 1);
+// let quartoNumero = Math.floor(Math.random() * 60 + 1);
+// let quintoNumero = Math.floor(Math.random() * 60 + 1);
+// let sextoNumero = Math.floor(Math.random() * 60 + 1);
+
+// let megaSenaSorteio = [primeiroNumero,segundoNumero,terceiroNumero,quartoNumero,quintoNumero,sextoNumero];
+// console.log(megaSenaSorteio);
+
+//Exercícios do dia de Arrays
+
+let numbers = [5, 9, 3, 123, 70, 8, 100, 2, 35, 27];
+let soma = 0;
+let media = 0;
+let maiorNumero = 0;
+let impares = 0;
+let menorNumero = numbers[0];
+
+for (let index = 0; index < numbers.length; index++) {
+  // Requisito 1
+  //   console.log(numbers[index]);
+
+  // Requisito 2
+  soma += numbers[index];
+
+  // Requisito 4
+  if (numbers[index] > 20) {
+    // console.log('valor maior que 20');
+  } else {
+    // console.log('valor menor ou igual a 20');
+  }
+
+  //Requisito 5
+  if (numbers[index] > maiorNumero) {
+    maiorNumero = numbers[index];
+  } else {
+    maiorNumero = maiorNumero;
+  }
+
+  //Requisito7
+  if (numbers[index] < menorNumero) {
+    menorNumero = numbers[index];
+  }else{
+    menorNumero=menorNumero;
+  }
+
+  //Requisito 6
+  if (numbers[index] % 2 !== 0) {
+    impares++;
+  } else {
+    impares = impares;
+  }
 }
-let d1 = dice();
-let d2 = dice();
-while(d1 === d2){
-    d2 = dice();
+//Requisito 3
+media = soma / numbers.length;
+//console.log(media);
+
+//Requisito 5 CONTINUAÇÃO
+// console.log(maiorNumero);
+
+//Requisito 6 CONTINUAÇÃO
+// console.log(impares);
+
+//Requisito 7 CONTINUAÇÃO
+// console.log(menorNumero);
+
+//Requisito 8
+let arrayTeste = [];
+for(let index = 0; index < 25; index++){
+arrayTeste[index]= index+1;
 }
-console.log(d1,d2);
+// console.log(arrayTeste);
+
+//Requisito 9
+for (let index = 0; index < arrayTeste.length; index++){
+    // console.log(arrayTeste[index]/2);
+}
