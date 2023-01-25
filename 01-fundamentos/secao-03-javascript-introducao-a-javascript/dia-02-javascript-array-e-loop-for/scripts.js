@@ -67,50 +67,50 @@
 
 //Exercícios do dia de Arrays
 
-let numbers = [5, 9, 3, 123, 70, 8, 100, 2, 35, 27];
-let soma = 0;
-let media = 0;
-let maiorNumero = 0;
-let impares = 0;
-let menorNumero = numbers[0];
+// let numbers = [5, 9, 3, 123, 70, 8, 100, 2, 35, 27];
+// let soma = 0;
+// let media = 0;
+// let maiorNumero = 0;
+// let impares = 0;
+// let menorNumero = numbers[0];
 
-for (let index = 0; index < numbers.length; index++) {
-  // Requisito 1
-  //   console.log(numbers[index]);
+// for (let index = 0; index < numbers.length; index++) {
+// Requisito 1
+//   console.log(numbers[index]);
 
-  // Requisito 2
-  soma += numbers[index];
+// Requisito 2
+// soma += numbers[index];
 
-  // Requisito 4
-  if (numbers[index] > 20) {
-    // console.log('valor maior que 20');
-  } else {
-    // console.log('valor menor ou igual a 20');
-  }
+// Requisito 4
+// if (numbers[index] > 20) {
+//   // console.log('valor maior que 20');
+// } else {
+//   // console.log('valor menor ou igual a 20');
+// }
 
-  //Requisito 5
-  if (numbers[index] > maiorNumero) {
-    maiorNumero = numbers[index];
-  } else {
-    maiorNumero = maiorNumero;
-  }
+//Requisito 5
+// if (numbers[index] > maiorNumero) {
+//   maiorNumero = numbers[index];
+// } else {
+//   maiorNumero = maiorNumero;
+// }
 
-  //Requisito7
-  if (numbers[index] < menorNumero) {
-    menorNumero = numbers[index];
-  } else {
-    menorNumero = menorNumero;
-  }
+//Requisito7
+// if (numbers[index] < menorNumero) {
+//   menorNumero = numbers[index];
+// } else {
+//   menorNumero = menorNumero;
+// }
 
-  //Requisito 6
-  if (numbers[index] % 2 !== 0) {
-    impares++;
-  } else {
-    impares = impares;
-  }
-}
+//Requisito 6
+//   if (numbers[index] % 2 !== 0) {
+//     impares++;
+//   } else {
+//     impares = impares;
+//   }
+// }
 //Requisito 3
-media = soma / numbers.length;
+// media = soma / numbers.length;
 //console.log(media);
 
 //Requisito 5 CONTINUAÇÃO
@@ -134,15 +134,36 @@ for (let index = 0; index < arrayTeste.length; index++) {
   // console.log(arrayTeste[index]/2);
 }
 
-
 //Exercício Bubblesort
 
-for (let index = 1; index < array.length; index += 1) {
-    for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
-      if (array[index] < array[secondIndex]) {
-        let position = array[index];
-        array[index] = array[secondIndex];
-        array[secondIndex] = position;
-      }
-    }
-  }
+let numero = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+
+// for (let index = 1; index < numbers.length; index += 1) {
+//   for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
+//     if (numbers[index] > numbers[secondIndex]) {
+//       // Pra fazer crescente e decrescente é só inverter o sinal
+//       let position = numbers[index];
+//       numbers[index] = numbers[secondIndex];
+//       numbers[secondIndex] = position;
+//     }
+//   }
+// }
+//Requisito 1
+// console.log(numbers);
+
+//Requisito 2
+// console.log(numbers.reverse());//Má prática
+
+//Requisito 3
+// let aux = [];
+// for (let index = 0; index <= numero.length - 1; index++) {
+//   if (index == numero.length-1) {
+//     aux[numero.length - 1] = numero[numero.length - 1] * 2;
+//   } else {
+//     aux[index] = numero[index] * numero[index + 1];
+//   }
+// }
+
+// console.log(numero);
+// console.log(aux);
+
