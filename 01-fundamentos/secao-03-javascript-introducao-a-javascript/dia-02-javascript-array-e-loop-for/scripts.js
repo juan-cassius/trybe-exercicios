@@ -98,8 +98,8 @@ for (let index = 0; index < numbers.length; index++) {
   //Requisito7
   if (numbers[index] < menorNumero) {
     menorNumero = numbers[index];
-  }else{
-    menorNumero=menorNumero;
+  } else {
+    menorNumero = menorNumero;
   }
 
   //Requisito 6
@@ -124,12 +124,25 @@ media = soma / numbers.length;
 
 //Requisito 8
 let arrayTeste = [];
-for(let index = 0; index < 25; index++){
-arrayTeste[index]= index+1;
+for (let index = 0; index < 25; index++) {
+  arrayTeste[index] = index + 1;
 }
 // console.log(arrayTeste);
 
 //Requisito 9
-for (let index = 0; index < arrayTeste.length; index++){
-    // console.log(arrayTeste[index]/2);
+for (let index = 0; index < arrayTeste.length; index++) {
+  // console.log(arrayTeste[index]/2);
 }
+
+
+//Exercício Bubblesort
+
+for (let index = 1; index < array.length; index += 1) {
+    for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
+      if (array[index] < array[secondIndex]) {
+        let position = array[index];
+        array[index] = array[secondIndex];
+        array[secondIndex] = position;
+      }
+    }
+  }
