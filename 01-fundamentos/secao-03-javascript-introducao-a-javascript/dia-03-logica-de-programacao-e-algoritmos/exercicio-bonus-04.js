@@ -1,18 +1,20 @@
-let n = 5;
+let n = 11;
 let linha = "";
-let posicaoDaLinhaAtual = n-1;
-let meio = (n+1/2)
+
+let meio = (n + 1) / 2;
 let aEsquerda = meio;
 let aDireita = meio;
 
-for (let indexLinha = 0; indexLinha < n; indexLinha++) {
-  for (let indexColuna = 0; indexColuna < n; indexColuna += 1) {
-    if (indexColuna < posicaoDaLinhaAtual) {
-      linha = linha + " ";
+for (let indexLinha = 0; indexLinha <= meio; indexLinha++) {
+  for (let indexColuna = 0; indexColuna <= n; indexColuna++) {
+    if (indexColuna > aEsquerda && indexColuna < aDireita) {
+      linha += "*";
     } else {
-      linha = linha + "*";
+      linha += " ";
     }
   }
   console.log(linha);
-  linha = "";
+  linha = '';
+  aDireita += 1;
+  aEsquerda -= 1;
 }
