@@ -184,3 +184,7 @@
 //   else return false;
 // }
 // console.log(angulosTriangulo(45, 4, 90));
+let a = "ffwefwfwf";
+let array = 'wfewfwfwe'
+
+console.log( typeof array);
