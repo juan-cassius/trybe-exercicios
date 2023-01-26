@@ -4,6 +4,7 @@
     // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+    
         {
             
             "processId": "${command:PickProcess}",
@@ -23,7 +24,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}"
+            "program": "${file}"
         }
     ]
 }

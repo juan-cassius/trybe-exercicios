@@ -18,3 +18,10 @@ for (let indexLinha = 1; indexLinha <= meio; indexLinha++) {
   aEsquerda -= 1;
   console.log(linha);
 }
+
+
+for (var i = 0; i < 10; i++) { 
+
+  console.log('teste'); 
+
+} 

@@ -1,4 +1,4 @@
-let n = 5;
+let n = 7;
 let linha = "";
 
 let meio = (n + 1) / 2;
