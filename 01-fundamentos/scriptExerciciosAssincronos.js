@@ -43,3 +43,4 @@ let headerDoElementoOndeVoceEsta = document.getElementById(
 ).firstElementChild;
 console.log(headerDoElementoOndeVoceEsta);
 elementoOndeVoceEsta.removeChild(headerDoElementoOndeVoceEsta);
+const para = document.createElement('p');
