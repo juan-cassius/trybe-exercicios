@@ -5,6 +5,14 @@ window.onload = () => {
   const init = () => {
     let backgroundC = JSON.parse(localStorage.getItem("backgroundColor"));
     if (backgroundC) main.backgroundColor = backgroundC;
+    let colorF = JSON.parse(localStorage.getItem("color"));
+    if (colorF) main.color = colorF;
+    let fontSz = JSON.parse(localStorage.getItem("fontSize"));
+    if (fontSz) main.fontSize = fontSz;
+    let lineHe = JSON.parse(localStorage.getItem("lineHeight"));
+    if (lineHe) main.lineHeight = lineHe;
+    let fontFml = JSON.parse(localStorage.getItem("fontFamily"));
+    if (fontFml) main.fontFamily = fontFml;
   };
 
   //Essa parte terá as funções:
