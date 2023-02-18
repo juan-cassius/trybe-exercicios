@@ -16,8 +16,11 @@ describe('Verifica se encode', () => {
   test('(o) retorna "4"', () => {
     expect(encode('o')).toBe("4");
   });
-  test('(u) retorna "5"', () => {
-    expect(encode('u')).toBe("5");
+  test('("1") retorna "1"', () => {
+    expect(encode('1')).toBe("1");
+  });
+  test('("1") tem tamanho de  1', () => {
+    expect(encode("1").length).toEqual(1);
   });
 });
 describe('Verifica se decode', () => {
@@ -38,5 +41,11 @@ describe('Verifica se decode', () => {
     });
     test('(5) retorna "u"', () => {
       expect(decode("5")).toBe("u");
+    });
+    test('(a) retorna "a"', () => {
+      expect(decode("a")).toBe("a");
+    });
+    test('("a") tem o tamanho de  1', () => {
+      expect(encode("a").length).toEqual(1);
     });
   });
