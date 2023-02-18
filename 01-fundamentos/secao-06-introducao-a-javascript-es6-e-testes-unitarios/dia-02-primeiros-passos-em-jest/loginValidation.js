@@ -19,4 +19,4 @@ const greetingMessage = (user) => {
       return loginErrorMessage(userName);
     }
   };
-  module.exports = { greetingMessage, loginErrorMessage, verifyCredentials, user };
+  module.exports = { greetingMessage, loginErrorMessage, verifyCredentials };
