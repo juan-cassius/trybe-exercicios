@@ -1,23 +1,23 @@
-import JustValidate from "just-validate";
-const validate = new window.JustValidate(
-    '#form', 
-    {
-      errorFieldCssClass: 'is-invalid',
-      errorFieldStyle: {
-        border: '1px solid red',
-      },
-      errorLabelCssClass: 'is-label-invalid',
-      errorLabelStyle: {
-        color: 'red',
-        textDecoration: 'underlined',
-      },
-      focusInvalidField: true,
-      lockForm: true,
-      tooltip: {
-        position: 'top',
-      },
-    },
-  );
+// import JustValidate from "just-validate";
+// const validate = new window.JustValidate(
+//     '#form', 
+//     {
+//       errorFieldCssClass: 'is-invalid',
+//       errorFieldStyle: {
+//         border: '1px solid red',
+//       },
+//       errorLabelCssClass: 'is-label-invalid',
+//       errorLabelStyle: {
+//         color: 'red',
+//         textDecoration: 'underlined',
+//       },
+//       focusInvalidField: true,
+//       lockForm: true,
+//       tooltip: {
+//         position: 'top',
+//       },
+//     },
+//   );
   
   function clearFields() {
     const formElements = document.querySelectorAll('input');
@@ -108,5 +108,5 @@ const validate = new window.JustValidate(
     const clearBtn = document.querySelector('#clear-btn');
     clearBtn.addEventListener('click', clearFields);
     const agreement = document.querySelector('#agreement');
-    agreement.addEventListener('change', enableSubmit);
+    agreement.addEventListener('click', enableSubmit);
   };

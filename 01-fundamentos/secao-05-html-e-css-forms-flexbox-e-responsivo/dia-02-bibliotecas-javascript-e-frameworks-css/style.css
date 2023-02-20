@@ -1,5 +1,5 @@
 /* Adiciona o CSS do Pikaday */
-@import "./node_modules/pikaday/css/pikaday.css";
+@import './node_modules/pikaday/css/pikaday.css';
 
 * {
   margin: 10;
