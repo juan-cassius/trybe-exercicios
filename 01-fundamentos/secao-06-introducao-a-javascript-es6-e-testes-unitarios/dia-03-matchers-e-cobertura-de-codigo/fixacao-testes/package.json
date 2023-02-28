@@ -1,5 +1,5 @@
 {
-  "name": "fixacao-testes",
+  "name": "dia-03-matchers-e-cobertura-de-codigo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,8 +8,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "jest": "^29.4.3"
-  }
+  "license": "ISC"
 }
