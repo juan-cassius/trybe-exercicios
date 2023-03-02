@@ -11,7 +11,7 @@ emailListInData.forEach( (email) =>{
 const numbers = [19, 21, 30, 3, 45, 22, 15];
 console.log(numbers.find((number) => number % 3 === 0 && number % 5 === 0));
 
-const names = ['João', 'Irene', 'Fernando', 'Maria'];
+// const names = ['João', 'Irene', 'Fernando', 'Maria'];
 console.log(names.find((name1) => name1.length === 5));
 
 const musicas = [
