@@ -66,9 +66,11 @@ const countries = [
   },
 ];
 
-const sumPop = (acc, curr) => console.log("Esse é o acumulador: "+acc,"Esse é o valor atua: "+curr);
+const sumPop = (acc, curr) => acc + curr.population;
+const getPopulation = () => countries.reduce(sumPop, 0);
 
-const expectedResult = 120797034;
-const getPopulation = () => countries.reduce((acc, curr) => acc + curr.population, 0);
+const expectedResult = 4311757;
+const sumArea = (acc, curr) => acc + curr.area; 
+const getTotalArea = () => countries.reduce(sumArea, 0);
 
-console.log(getPopulation());
+console.log(getTotalArea());
